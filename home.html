@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.js" integrity="sha512-CAv0l04Voko2LIdaPmkvGjH3jLsH+pmTXKFoyh5TIimAME93KjejeP9j7wSeSRXqXForv73KUZGJMn8/P98Ifg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Charts</title>
+</head>
+<body>
+  <!-- section header and nav -->
+  <header class="container-small js-header header">
+    <div class="menu-mobile js-menu-mobile">
+      <p class="menu-mobile__title">Menu</p>
+    </div>
+    <ul class="nav nav--dark ">
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./home.html" rel="noopener noreferrer">Inicio</a> </li>
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./home.html" rel="noopener noreferrer">Gráficos básicos</a> </li>
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./advancecharts.html" rel="noopener noreferrer">Gráficos avanzados</a> </li>
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./d3.html" rel="noopener noreferrer">Gráficos D3</a> </li>
+    </ul>
+  </header>
+  <!-- section main -->
+  <main class="container-small">
+    <!-- section basic charts -->
+    <section class="basic-charts">
+      <h1 class="basic-charts__title basic-charts__title--dark-1">Montañas Rusas En El Mundo</h1>
+      <div class="basic-charts__group1">
+        <figure>
+          <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico de Barras</p>
+            <h3 class="basic-charts__title basic-charts__title--dark" >Cantidad por país</h3>
+            <hr class="basic-charts__hr">
+          <canvas class="basic-charts__canvas-1" id="mychart"></canvas>
+        </figure>
+        <figure>
+          <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico Circular</p>
+            <h3 class="basic-charts__title basic-charts__title--dark" >Cantidad por Modelo</h3>
+            <hr class="basic-charts__hr">
+          <canvas class="basic-charts__canvas-2" id="mychart2"></canvas>
+        </figure>
+      </div>
+    </section>
+    <section class="basic-charts">
+      <div class="basic-charts__group1">
+        <figure>
+          <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico de Radar</p>
+          <h3 class="basic-charts__title basic-charts__title--dark" >Comparativa de Altura y Nombre</h3>
+          <hr class="basic-charts__hr">
+          <canvas id="mychart3"></canvas>
+        </figure>
+        <figure>
+          <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico de Dona</p>
+          <h3 class="basic-charts__title basic-charts__title--dark" >Cantidad por país</h3>
+          <hr class="basic-charts__hr">
+          <canvas id="mychart4"></canvas>
+        </figure>
+      </div>
+    </section>
+      <canvas id="mychart5" width="400" height="400"></canvas>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="./js/main.js" ></script>
+</body>
+</html>

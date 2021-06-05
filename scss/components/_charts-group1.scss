@@ -1,0 +1,53 @@
+
+
+.basic-charts{
+    width: 50%;
+    &:first-child{
+      padding-top: 5rem;
+    }
+    @include display(mobile){
+      width: 100%;
+    }
+  &__group1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    @include display(mobile){
+      flex-direction: column;
+    }
+  }
+  &__canvas{
+    &-1--width{
+      background-color: red;
+      width: 33.33%;
+    }
+    &-2{
+      padding: 2rem;
+      padding-right: 0;
+      @include display(mobile){
+        padding: 2rem;
+      }
+      &--width{
+        width: 33.3%;
+      }
+    }
+  }
+  &__descriptions{
+    &--dark{
+      color: $color-one;
+    }
+  }
+  &__title{
+    &--dark{
+      color: $color-one;
+      &-1{
+        padding: 0 2rem;
+      }
+    }
+    &--light{
+      color: white;
+      padding: 0 2rem;
+    }
+  }
+}

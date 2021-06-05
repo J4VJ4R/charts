@@ -1,0 +1,65 @@
+
+.bg-dark{
+  background: $color-one;
+}
+.basic-charts{
+  width: 100%;
+  @include display(mobile){
+    width: 100%;
+  }
+  
+  &__wrap{
+    padding: 1rem;
+  }
+  &__title{
+    padding-bottom: 1rem;
+  }
+  &__hr{
+    margin-bottom: 1rem;
+  }
+  &__group1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    @include display(mobile){
+      flex-direction: column;
+    }
+  }
+  &__canvas{
+    &-2{
+      padding: 2rem;
+      padding-right: 0;
+      @include display(mobile){
+        padding: 2rem;
+      }
+    }
+  }
+  &__figure{
+    padding: 2rem;
+    background-color: $color-two;
+    opacity: .8;
+    border-radius: 10px;
+    &:first-child{
+      margin-right: 1rem;
+      margin-bottom: 3rem;
+    }
+    &:last-child{
+      margin-bottom: 5rem;
+      margin-top: 3rem;
+    }
+    
+    @include display(tablet-small-down){
+      padding: 0;
+      width: 100%;
+    }
+    @include display(mobile){
+      margin-bottom: 2rem;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}
+h3, p, hr{
+  color: white;
+}

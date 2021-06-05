@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <title>Charts</title>
+</head>
+<body>
+  <!-- section header and nav -->
+  <header class="container-small js-header header">
+    <div class="menu-mobile js-menu-mobile">
+      <p class="menu-mobile__title">Menu</p>
+    </div>
+    <ul class="nav nav--dark ">
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./home.html" rel="noopener noreferrer">Inicio</a> </li>
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./home.html" rel="noopener noreferrer">Gráficos básicos</a> </li>
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./advancecharts.html" rel="noopener noreferrer">Gráficos avanzados</a> </li>
+      <li class="nav__item"> <a class="nav__link nav__link--dark nav__link nav__link--light" href="./d3.html" rel="noopener noreferrer">Gráficos D3</a> </li>
+    </ul>
+  </header>
+  <!-- section main -->
+  <main class="container-small">
+    <!-- section basic charts -->
+    <section class="basic-charts">
+      <h1 class="basic-charts__title basic-charts__title--dark-1">Gráficos con D3.js</h1>
+      <div class="basic-charts__group1">
+        <figure>
+            <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico de Barras</p>
+            <h3 class="basic-charts__title basic-charts__title--dark" >Cantidad por país</h3>
+            <hr class="basic-charts__hr">
+            <div class="barras" id="barras"></div>
+        </figure>
+      </div>
+    </section>
+    <section class="basic-charts">
+      <div class="basic-charts__group1">
+        <figure class="figure-2">
+          <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico Circular</p>
+          <h3 class="basic-charts__title basic-charts__title--dark" >Porcentaje de uso por navegador</h3>
+          <hr class="basic-charts__hr">
+          <!-- <div class="barras-2" id="barras-2"></div> -->
+          <svg width="400" height="400" class="circle-svg"></svg>
+        </figure>
+      </div>
+    </section>
+    <section class="basic-charts">
+      <div class="basic-charts__group1">
+        <figure class="figure-3">
+          <p  class="basic-charts__descriptions basic-charts__descriptions--dark">Gráfico Circular</p>
+          <h3 class="basic-charts__title basic-charts__title--dark" >Porcentaje de uso por navegador</h3>
+          <hr class="basic-charts__hr">
+          <!-- <div class="barras-2" id="barras-2"></div> -->
+          <div class="barras-2"></div>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <script src="./js/d3.js" ></script>
+
+</body>
+</html>
